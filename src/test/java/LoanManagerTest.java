@@ -1,4 +1,8 @@
-
+import org.example.Book;
+import org.example.Student;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 public class LoanManagerTest {
     @Test
     public void testAddBook() {
@@ -6,7 +10,7 @@ public class LoanManagerTest {
         Book book = null;
         LoanManager instance = null;
         instance.addBook(book);
-        fail("The test case is a prototype.");
+        fail("It's just a test.");
     }
 
     @Test
@@ -15,7 +19,7 @@ public class LoanManagerTest {
         Student student = null;
         LoanManager instance = null;
         instance.registerStudent(student);
-        fail("The test case is a prototype.");
+        fail("It's just a test.");
     }
 
     @Test
@@ -27,6 +31,6 @@ public class LoanManagerTest {
         boolean expResult = false;
         boolean result = instance.lendBook(bookId, studentId);
         assertEquals(expResult, result);
-        fail("The test case is a prototype.");
+        fail("It's just a test.");
     }
 }
